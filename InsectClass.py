@@ -7,4 +7,7 @@ class Insect:
         self.length = 0
 
     def lengthofflight(self):   
-        self.length = random.randint(1,10)
+        self.length = random.randint(1, 10)
+        
+    def get_flight(self):
+        return self.length
