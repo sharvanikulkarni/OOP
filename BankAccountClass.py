@@ -20,6 +20,9 @@ class BankAccount:
       # from the account.
 
     def withdraw(self, amount):
+      if amount <= 0:
+       print("you fool!")
+      else:
         if self.__balance >= amount:
             self.__balance -= amount
         else:
@@ -35,3 +38,6 @@ class BankAccount:
 
     def __str__(self):
         return 'The balance is $' + format(self.__balance, ',.2f')
+      
+
+
